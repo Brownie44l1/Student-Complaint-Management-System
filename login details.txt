@@ -1,0 +1,17 @@
+**Database Name: scms**
+
+**Developed by Apata Abdulmalik**
+
+**Recommended PHP Version **
+
+* Admin login details *
+Username: admin1
+Password: adminnn123
+
+* Sub-admin login details *
+Username: daniel_awolowo
+Password: test_password123
+
+* User login details *
+Username: CS1234567890
+Password: test_password123

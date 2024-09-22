@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background-color: #f0f0f0;
+}
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-left: 260px;
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease;
+}
+.main-container.centered {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    transform: translateX(-10px);
+}
+.sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    height: 89vh;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+.sidebar.hidden{
+    display: none;
+    transform: translateX(-10%);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    display: flex;
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 16px;
+}
+.sidebar ul li .fa {
+    margin-right: 10px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+.sidebar ul li:hover {
+    background-color: #f0f0f0;
+    margin: 5px 8px;
+    border-radius: 12px;
+}
+.sidebar ul li:nth-child(3) {
+    font-size: small;
+    margin: 5px 5px;
+}
+.sidebar ul li:nth-child(4) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(6) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(7) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(8) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(9) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(11) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(12) {
+    font-size: small;
+}
+     /*Navigation Bar*/
+.div-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 12px;
+}
+.div-navbar .nav-title {
+    display: flex;
+    align-items: center;
+}
+.div-navbar .nav-title h4 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.div-navbar .hamburger, .logout {
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.logout:hover::after {
+    content: "Logout";
+    font-size: 13px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.main-content {
+    padding: 20px;
+    background-color: #ffffff;
+    height: 475px;
+    border-radius: 12px;
+    position: relative;
+    top: 20px;
+}
+.main-content h5{
+    font-size: 17px;
+    padding: 15px;
+}
+.main-content h5 i {
+    margin-right: 5px;
+}
+/*Finished Here*/
+.content {
+    flex-grow: 1;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    margin-bottom: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+table th {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.status {
+    color: red;
+    font-weight: bold;
+}
+
+/* Additional styles for the popup form */
+form {
+    margin: 0;
+}
+
+form table {
+    width: auto;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+form th, form td {
+    border: none;
+    padding: 20px;
+    text-align: left;
+}
+
+form th {
+    width: 100px;
+}
+
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+form input[type="submit"], form button {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+form button {
+    background-color: red;
+}
+
+/* Additional style for forward_complaint.php */
+
+h3, label {
+    margin: 10px;
+}
+
+#forward_to {
+    width: 250px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+form button .blue {
+    background-color: blue;
+    color: white;
+}
+
+/*Additional font for View user details*/
+.table{
+    margin: 10px;
+}
+
+.button__ {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

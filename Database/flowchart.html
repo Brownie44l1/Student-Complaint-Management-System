@@ -1,0 +1,72 @@
+<!--Doesn't do anything, but helps tbh-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Management Flowchart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.15.0/flowchart.min.js"></script>
+</head>
+<body>
+    <h1>Complaint Management System Flowchart</h1>
+    <div id="flowchart" style="width: 100%; height: 600px;"></div>
+    <script>
+        var chart = flowchart.parse(`
+            st=>start: Start
+            e=>end: End
+
+            op1=>operation: Student Login
+            op2=>operation: Admin Login
+            op3=>operation: Sub-Admin Login
+
+            op4=>operation: Lodge Complaint
+            op5=>operation: Manage Sub-Admins
+            op6=>operation: Manage Complaints
+            op7=>operation: Update Complaint Status
+
+            cond1=>condition: Is User Student?
+            cond2=>condition: Is User Admin?
+            cond3=>condition: Is User Sub-Admin?
+            cond4=>condition: Is Complaint Resolved?
+
+            st->cond1
+            cond1(yes)->op1->op4->cond4
+            cond1(no)->cond2
+            cond2(yes)->op2->op5->op6->cond4
+            cond2(no)->cond3
+            cond3(yes)->op3->op6->op7->cond4
+
+            cond4(yes)->e
+            cond4(no)->op6
+        `);
+
+        chart.drawSVG('flowchart', {
+            'x': 0,
+            'y': 0,
+            'line-width': 2,
+            'line-length': 50,
+            'text-margin': 10,
+            'font-size': 14,
+            'font-color': 'black',
+            'line-color': 'black',
+            'element-color': 'black',
+            'fill': 'white',
+            'yes-text': 'Yes',
+            'no-text': 'No',
+            'arrow-end': 'block',
+            'scale': 1,
+            'symbols': {
+                'start': {
+                    'font-color': 'red',
+                    'element-color': 'green',
+                    'fill': 'yellow'
+                },
+                'end': {
+                    'class': 'end-element'
+                }
+            }
+        });
+    </script>
+</body>
+</html>

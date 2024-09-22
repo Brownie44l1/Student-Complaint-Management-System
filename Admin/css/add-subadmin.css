@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background-color: #f0f0f0;
+}
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-left: 260px;
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease;
+}
+.main-container.centered {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    transform: translateX(-10px);
+}
+.sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    height: 89vh;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+.sidebar.hidden{
+    display: none;
+    transform: translateX(-10%);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    display: flex;
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 16px;
+}
+.sidebar ul li .fa {
+    margin-right: 10px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+.sidebar ul li:hover {
+    background-color: #f0f0f0;
+    margin: 5px 8px;
+    border-radius: 12px;
+}
+.sidebar ul li:nth-child(3) {
+    font-size: small;
+    margin: 5px 5px;
+}
+.sidebar ul li:nth-child(4) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(6) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(7) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(8) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(9) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(11) {
+    font-size: small;
+}
+.sidebar ul li:nth-child(12) {
+    font-size: small;
+}
+     /*Navigation Bar*/
+.div-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 12px;
+}
+.div-navbar .nav-title {
+    display: flex;
+    align-items: center;
+}
+.div-navbar .nav-title h4 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.div-navbar .hamburger, .logout {
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+.logout:hover::after {
+    content: "Logout";
+    font-size: 13px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    /* Adjust the styles as needed */
+}
+.main-content {
+    padding: 20px;
+    background-color: #ffffff;
+    height: 475px;
+    border-radius: 12px;
+    position: relative;
+    top: 20px;
+}
+.main-content h5{
+    font-size: 17px;
+    padding: 15px;
+}
+.main-content h5 i {
+    margin-right: 5px;
+}
+
+/* Finished Here*/
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1 1 48%;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
