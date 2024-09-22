@@ -1,5 +1,4 @@
 ## Student Complaint Management System
-Honestly don't know how to document this
 
 - After you finish downloading the project / Pulling the code
 - Download XAMPP - a web server used for php.
